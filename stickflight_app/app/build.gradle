@@ -31,8 +31,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            shrinkResources true
-            minifyEnabled true
+            shrinkResources false  // 禁用资源压缩，便于调试
+            minifyEnabled false    // 禁用代码混淆，便于调试
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
